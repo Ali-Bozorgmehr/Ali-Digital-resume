@@ -1,0 +1,87 @@
+body{
+    width: 95%;
+}
+
+hr{
+    width: 50%;
+}
+
+p{
+    font-size: 1rem;
+}
+
+p, h1, h2, h4{
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.right-side, .left-side{
+    width: 100%;
+}
+
+.left-side{
+    background-color: rgb(121, 175, 175);
+    text-align: justify;
+    height: fit-content;
+    margin-top: 2%;
+    position: sticky;
+    top: 0%;
+}
+
+.right-side{
+    text-align: justify;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.right-side p{
+    line-height: 1.3rem;
+}
+
+img{
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 4%;
+    border: 1px solid black;
+    box-shadow: 2px 2px black;
+}
+
+.right-side h2{
+    background-color: #282c01;
+    color: white;
+}
+
+.right-side h4{
+    background-color: #d3d5c1;
+    color: rgb(0, 0, 0);
+    font-size: 1.1rem;
+}
+
+li{
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.date{
+    font-size: 0.9rem;
+}
+
+@media only screen and (max-width: 900px) {
+    /* For mobile phones: */
+    main{
+        display: block;
+    }
+    .left-side{
+        background-color: rgb(89, 164, 164);
+        text-align: justify;
+        height:max-content;
+        top: 1%;
+        position: relative;
+        background-color: white;
+    }
+}
