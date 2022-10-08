@@ -2,23 +2,33 @@ body{
     width: 95%;
 }
 
+p, li, dt, dd, h3{
+    font-size: 1.5rem;
+}
+
+h1{
+    text-align: center;
+}
+
 hr{
     width: 50%;
 }
 
-p{
-    font-size: 1rem;
-}
-
-p, h1, h2, h4{
+p, h2, h3, dt, dd{
     padding-left: 3%;
     padding-right: 3%;
+    padding-bottom: 1%;
+    padding-top: 1%;
 }
+
+
 
 main{
     display: grid;
-    grid-template-columns: 25% 75%;
+    grid-template-columns: 35% 65%;
 }
+
+h1, h2, h3 :first-letter { text-transform: uppercase; }
 
 .right-side, .left-side{
     width: 100%;
@@ -39,10 +49,6 @@ main{
     margin-right: 2%;
 }
 
-.right-side p{
-    line-height: 1.3rem;
-}
-
 img{
     width: 30%;
     margin-left: 35%;
@@ -56,19 +62,17 @@ img{
     color: white;
 }
 
-.right-side h4{
+.right-side h3{
     background-color: #d3d5c1;
     color: rgb(0, 0, 0);
-    font-size: 1.1rem;
-}
-
-li{
-    font-size: 1rem;
-    line-height: 1.5rem;
 }
 
 .date{
-    font-size: 0.9rem;
+    font-size: 1.1rem;
+}
+
+dd{
+    margin-bottom: 2%;
 }
 
 @media only screen and (max-width: 900px) {
